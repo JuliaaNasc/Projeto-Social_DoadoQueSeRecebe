@@ -74,17 +74,32 @@ class _MainScreenState extends State<MainScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              decoration: const BoxDecoration(boxShadow: [
-                BoxShadow(
-                  color: Colors.black,
-                  spreadRadius: 1,
-                  blurRadius: 10,
+            Stack(
+              children: [
+                Container(
+                  decoration: const BoxDecoration(boxShadow: [
+                    BoxShadow(
+                      color: Colors.black,
+                      spreadRadius: 1,
+                      blurRadius: 20,
+                    ),
+                  ]),
+                  child: Image.asset(
+                    'assets/criancas_instituto.png',
+                  ),
                 ),
-              ]),
-              child: Image.asset(
-                'assets/criancas_do_instituto.jpg',
-              ),
+              const Positioned.fill(top: 100,
+                 child: Text(
+                    'QUEM SOMOS',
+                     textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                      color: Colors.white,
+                    ),
+                  ),
+               )
+              ],
             ),
             const SizedBox(height: 20),
             const Text(
@@ -117,7 +132,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             const Text(
-              'Doações Para Familias',
+              'Doações De Alimentos',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -125,9 +140,9 @@ class _MainScreenState extends State<MainScreen> {
                 color: Colors.black,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(50, 10, 50, 20),
-              child: const Text(
+           const Padding(
+              padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
+              child: Text(
                 'As doações são feitas de forma simbólica por cada pessoa que se fornece a doar. Os alimentos são entregues a famílias que estão necessitadas.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
@@ -156,7 +171,7 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
-              const Text(
+            const Text(
               'Dia das Crianças',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -165,9 +180,9 @@ class _MainScreenState extends State<MainScreen> {
                 color: Colors.black,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(50, 10, 50, 20),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
+              child: Text(
                 'O nosso dia das crianças é feito com muito amor e carinho para nossa comunidade, e com a ajuda da sua doação podemos presentear varias crianças necessitadas.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
@@ -176,7 +191,7 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
-             Padding(
+            Padding(
               padding: const EdgeInsets.fromLTRB(100, 40, 100, 20),
               child: Container(
                 decoration: const BoxDecoration(
@@ -196,7 +211,7 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
-              const Text(
+            const Text(
               'Doações de roupas',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -205,9 +220,9 @@ class _MainScreenState extends State<MainScreen> {
                 color: Colors.black,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(50, 10, 50, 20),
-              child: const Text(
+           const Padding(
+              padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
+              child: Text(
                 'As doações de roupas são recebidas com muito carinho e cuidado, para as nossas crianças e adultos que necessitam de doações.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
