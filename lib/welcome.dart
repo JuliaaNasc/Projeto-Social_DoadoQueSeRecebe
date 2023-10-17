@@ -15,8 +15,7 @@ class Welcome extends StatelessWidget {
             width: 380,
           ),
           Image.asset(
-            'assets/wave_red.jpg',
-           
+            'assets/wave_red.png',
           ),
           const SizedBox(height: 50),
           SizedBox(
