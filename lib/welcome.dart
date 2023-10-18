@@ -31,7 +31,6 @@ class Welcome extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 20,
-                  fontFamily: 'Monserrat',
                   fontWeight: FontWeight.bold,
                 ),
               ),

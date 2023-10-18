@@ -88,17 +88,18 @@ class _MainScreenState extends State<MainScreen> {
                     'assets/criancas_instituto.png',
                   ),
                 ),
-              const Positioned.fill(top: 100,
-                 child: Text(
+                const Positioned.fill(
+                  top: 100,
+                  child: Text(
                     'QUEM SOMOS',
-                     textAlign: TextAlign.center,
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 25,
                       color: Colors.white,
                     ),
                   ),
-               )
+                )
               ],
             ),
             const SizedBox(height: 20),
@@ -140,7 +141,7 @@ class _MainScreenState extends State<MainScreen> {
                 color: Colors.black,
               ),
             ),
-           const Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
               child: Text(
                 'As doações são feitas de forma simbólica por cada pessoa que se fornece a doar. Os alimentos são entregues a famílias que estão necessitadas.',
@@ -220,7 +221,7 @@ class _MainScreenState extends State<MainScreen> {
                 color: Colors.black,
               ),
             ),
-           const Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
               child: Text(
                 'As doações de roupas são recebidas com muito carinho e cuidado, para as nossas crianças e adultos que necessitam de doações.',
@@ -230,6 +231,49 @@ class _MainScreenState extends State<MainScreen> {
                   color: Colors.black,
                 ),
               ),
+            ),
+                     Padding(
+              padding: const EdgeInsets.fromLTRB(100, 40, 100, 20),
+              child: Container(
+                decoration: const BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black,
+                      spreadRadius: 1,
+                      blurRadius: 10,
+                    ),
+                  ],
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(
+                    'assets/criancas_pascoa.png',
+                  ),
+                ),
+              ),
+            ),
+            const Text(
+              'Açaõ de Páscoa',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                color: Colors.black,
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(50, 10, 50, 20),
+              child: Text(
+                'A ação de páscoa é feita com o intuito das crianças terem o momento de ser criança. Para a criança mais doce do mundo, eu desejo uma Páscoa repleta de amor, chocolates e coelhinhos! colabore conosco para celebrarmos uma boa páscoa.',
+                textAlign: TextAlign.justify,
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Image.asset(
+              'assets/wave_red.png',
             ),
           ],
         ),
