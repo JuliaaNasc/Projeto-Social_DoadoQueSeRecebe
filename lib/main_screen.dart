@@ -1,5 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:projeto_social/pages/about_us.dart';
+import 'package:projeto_social/pages/contact.dart';
+import 'package:projeto_social/pages/contribute.dart';
+import 'package:projeto_social/pages/photos.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -111,7 +115,15 @@ class _MainScreenState extends State<MainScreen> {
                           style: OutlinedButton.styleFrom(
                             side: BorderSide(width: 2, color: Colors.white),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (c) {
+                                  return AboutUs();
+                                },
+                              ),
+                            );
+                          },
                           child: const Text(
                             'Saiba Mais...',
                             textAlign: TextAlign.center,
@@ -151,7 +163,15 @@ class _MainScreenState extends State<MainScreen> {
                           style: OutlinedButton.styleFrom(
                             side: BorderSide(width: 2, color: Colors.white),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (c) {
+                                  return Photos();
+                                },
+                              ),
+                            );
+                          },
                           child: const Text(
                             'Saiba Mais...',
                             textAlign: TextAlign.center,
@@ -165,7 +185,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ],
                   ),
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         'assets/criancas_instituto.png',
@@ -191,7 +211,9 @@ class _MainScreenState extends State<MainScreen> {
                           style: OutlinedButton.styleFrom(
                             side: BorderSide(width: 2, color: Colors.white),
                           ),
-                          onPressed: () {},
+                          onPressed: () { Navigator.of(context).push(MaterialPageRoute(builder: (c){
+                              return Contact();
+                            },),);},
                           child: const Text(
                             'Saiba Mais...',
                             textAlign: TextAlign.center,
@@ -205,7 +227,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ],
                   ),
-                   Stack(
+                  Stack(
                     children: [
                       Image.asset(
                         'assets/criancas_instituto.png',
@@ -231,7 +253,11 @@ class _MainScreenState extends State<MainScreen> {
                           style: OutlinedButton.styleFrom(
                             side: BorderSide(width: 2, color: Colors.white),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                             Navigator.of(context).push(MaterialPageRoute(builder: (c){
+                              return Contribute();
+                            },),);
+                          },
                           child: const Text(
                             'Saiba Mais...',
                             textAlign: TextAlign.center,
@@ -263,7 +289,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(100, 40, 100, 20),
+              padding: const EdgeInsets.fromLTRB(75, 40, 75, 20),
               child: Container(
                 decoration: const BoxDecoration(
                   boxShadow: [
@@ -287,7 +313,7 @@ class _MainScreenState extends State<MainScreen> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20,
+                fontSize: 22,
                 color: Colors.black,
               ),
             ),
@@ -297,13 +323,13 @@ class _MainScreenState extends State<MainScreen> {
                 'As doações são feitas de forma simbólica por cada pessoa que se fornece a doar. Os alimentos são entregues a famílias que estão necessitadas.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 19,
                   color: Colors.black,
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(100, 40, 100, 20),
+              padding: const EdgeInsets.fromLTRB(75, 40, 75, 20),
               child: Container(
                 decoration: const BoxDecoration(
                   boxShadow: [
@@ -327,7 +353,7 @@ class _MainScreenState extends State<MainScreen> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20,
+                fontSize: 22,
                 color: Colors.black,
               ),
             ),
@@ -337,13 +363,13 @@ class _MainScreenState extends State<MainScreen> {
                 'O nosso dia das crianças é feito com muito amor e carinho para nossa comunidade, e com a ajuda da sua doação podemos presentear varias crianças necessitadas.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 19,
                   color: Colors.black,
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(100, 40, 100, 20),
+              padding: const EdgeInsets.fromLTRB(75, 40, 75, 20),
               child: Container(
                 decoration: const BoxDecoration(
                   boxShadow: [
@@ -367,7 +393,7 @@ class _MainScreenState extends State<MainScreen> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20,
+                fontSize: 22,
                 color: Colors.black,
               ),
             ),
@@ -377,13 +403,13 @@ class _MainScreenState extends State<MainScreen> {
                 'As doações de roupas são recebidas com muito carinho e cuidado, para as nossas crianças e adultos que necessitam de doações.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 19,
                   color: Colors.black,
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(100, 40, 100, 20),
+              padding: const EdgeInsets.fromLTRB(75, 40, 75, 20),
               child: Container(
                 decoration: const BoxDecoration(
                   boxShadow: [
@@ -407,7 +433,7 @@ class _MainScreenState extends State<MainScreen> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20,
+                fontSize: 22,
                 color: Colors.black,
               ),
             ),
@@ -417,7 +443,7 @@ class _MainScreenState extends State<MainScreen> {
                 'A ação de páscoa é feita com o intuito das crianças terem o momento de ser criança. Para a criança mais doce do mundo, eu desejo uma Páscoa repleta de amor, chocolates e coelhinhos! colabore conosco para celebrarmos uma boa páscoa.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 19,
                   color: Colors.black,
                 ),
               ),
