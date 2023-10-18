@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
             ),
             const ListTile(
               title: Text(
-                'Sobre',
+                'Quem Somos',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -74,33 +75,182 @@ class _MainScreenState extends State<MainScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Stack(
-              children: [
-                Container(
-                  decoration: const BoxDecoration(boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      spreadRadius: 1,
-                      blurRadius: 20,
-                    ),
-                  ]),
-                  child: Image.asset(
-                    'assets/criancas_instituto.png',
-                  ),
+            Container(
+              decoration: const BoxDecoration(boxShadow: [
+                BoxShadow(
+                  color: Colors.black,
+                  spreadRadius: 1,
+                  blurRadius: 20,
                 ),
-                const Positioned.fill(
-                  top: 100,
-                  child: Text(
-                    'QUEM SOMOS',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                      color: Colors.white,
-                    ),
+              ]),
+              child: CarouselSlider(
+                items: [
+                  Stack(
+                    children: [
+                      Image.asset(
+                        'assets/criancas_instituto.png',
+                      ),
+                      const Positioned.fill(
+                        top: 90,
+                        child: Text(
+                          'QUEM SOMOS',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Positioned.fill(
+                        top: 140,
+                        bottom: 50,
+                        left: 130,
+                        right: 130,
+                        child: OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(width: 2, color: Colors.white),
+                          ),
+                          onPressed: () {},
+                          child: const Text(
+                            'Saiba Mais...',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                )
-              ],
+                  Stack(
+                    children: [
+                      Image.asset(
+                        'assets/criancas_instituto.png',
+                      ),
+                      const Positioned.fill(
+                        top: 90,
+                        child: Text(
+                          'FOTOS',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Positioned.fill(
+                        top: 140,
+                        bottom: 50,
+                        left: 130,
+                        right: 130,
+                        child: OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(width: 2, color: Colors.white),
+                          ),
+                          onPressed: () {},
+                          child: const Text(
+                            'Saiba Mais...',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                   Stack(
+                    children: [
+                      Image.asset(
+                        'assets/criancas_instituto.png',
+                      ),
+                      const Positioned.fill(
+                        top: 90,
+                        child: Text(
+                          'CONTATO',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Positioned.fill(
+                        top: 140,
+                        bottom: 50,
+                        left: 130,
+                        right: 130,
+                        child: OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(width: 2, color: Colors.white),
+                          ),
+                          onPressed: () {},
+                          child: const Text(
+                            'Saiba Mais...',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                   Stack(
+                    children: [
+                      Image.asset(
+                        'assets/criancas_instituto.png',
+                      ),
+                      const Positioned.fill(
+                        top: 90,
+                        child: Text(
+                          'QUERO CONTRIBUIR',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Positioned.fill(
+                        top: 140,
+                        bottom: 50,
+                        left: 130,
+                        right: 130,
+                        child: OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(width: 2, color: Colors.white),
+                          ),
+                          onPressed: () {},
+                          child: const Text(
+                            'Saiba Mais...',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+                options: CarouselOptions(
+                  viewportFraction: 1,
+                  autoPlay: true,
+                ),
+              ),
             ),
             const SizedBox(height: 20),
             const Text(
@@ -232,7 +382,7 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
-                     Padding(
+            Padding(
               padding: const EdgeInsets.fromLTRB(100, 40, 100, 20),
               child: Container(
                 decoration: const BoxDecoration(
@@ -253,7 +403,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             const Text(
-              'Açaõ de Páscoa',
+              'Ação de Páscoa',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
