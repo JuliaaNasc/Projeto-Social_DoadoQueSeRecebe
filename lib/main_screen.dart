@@ -211,9 +211,15 @@ class _MainScreenState extends State<MainScreen> {
                           style: OutlinedButton.styleFrom(
                             side: BorderSide(width: 2, color: Colors.white),
                           ),
-                          onPressed: () { Navigator.of(context).push(MaterialPageRoute(builder: (c){
-                              return Contact();
-                            },),);},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (c) {
+                                  return Contact();
+                                },
+                              ),
+                            );
+                          },
                           child: const Text(
                             'Saiba Mais...',
                             textAlign: TextAlign.center,
@@ -254,9 +260,13 @@ class _MainScreenState extends State<MainScreen> {
                             side: BorderSide(width: 2, color: Colors.white),
                           ),
                           onPressed: () {
-                             Navigator.of(context).push(MaterialPageRoute(builder: (c){
-                              return Contribute();
-                            },),);
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (c) {
+                                  return Contribute();
+                                },
+                              ),
+                            );
                           },
                           child: const Text(
                             'Saiba Mais...',
@@ -448,6 +458,34 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 30),
+            OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                side: const BorderSide(
+                  width: 2,
+                  color: Colors.black,
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (c) {
+                      return Contribute();
+                    },
+                  ),
+                );
+              },
+              child: const Text(
+                'Contribue Conosco',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
             Image.asset(
               'assets/wave_red.png',
             ),
