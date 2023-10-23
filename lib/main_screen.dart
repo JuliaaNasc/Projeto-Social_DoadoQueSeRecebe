@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projeto_social/pages/about_us.dart';
 import 'package:projeto_social/pages/contact.dart';
 import 'package:projeto_social/pages/contribute.dart';
+import 'package:projeto_social/pages/developers.dart';
 import 'package:projeto_social/pages/photos.dart';
 import 'package:projeto_social/pages/start.dart';
 
@@ -30,8 +31,8 @@ class _MainScreenState extends State<MainScreen> {
               'assets/wave_red.png',
             ),
             const SizedBox(height: 20),
-             ListTile(
-              onTap: (){
+            ListTile(
+              onTap: () {
                 setState(() {
                   body = const Start();
                 });
@@ -44,20 +45,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
-              onTap: (){
-                setState(() {
-                  body = const AboutUs();
-                });
-              },
-              title: const Text(
-                'Quem Somos',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            ListTile(
-              onTap: (){
+              onTap: () {
                 setState(() {
                   body = const Photos();
                 });
@@ -83,11 +71,35 @@ class _MainScreenState extends State<MainScreen> {
             ListTile(
               onTap: () {
                 setState(() {
+                  body = const AboutUs();
+                });
+              },
+              title: const Text(
+                'Quem Somos',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                setState(() {
                   body = const Contribute();
                 });
               },
               title: const Text(
                 'Quero Contribuir',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                setState(() {
+                  body = const Developer();
+                });
+              },
+              title: const Text(
+                'Desenvolvedores',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
