@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:projeto_social/pages/contact.dart';
 import 'package:projeto_social/pages/contribute.dart';
-import 'package:projeto_social/pages/photos.dart';
+import 'package:projeto_social/pages/gallery.dart';
 
 import 'about_us.dart';
 
@@ -73,7 +73,7 @@ class Start extends StatelessWidget {
                     const Positioned.fill(
                       top: 90,
                       child: Text(
-                        'FOTOS',
+                        'GALERIA',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class Start extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (c) {
-                                return const Photos();
+                                return const Gallery();
                               },
                             ),
                           );

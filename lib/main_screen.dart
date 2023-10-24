@@ -3,7 +3,7 @@ import 'package:projeto_social/pages/about_us.dart';
 import 'package:projeto_social/pages/contact.dart';
 import 'package:projeto_social/pages/contribute.dart';
 import 'package:projeto_social/pages/developers.dart';
-import 'package:projeto_social/pages/photos.dart';
+import 'package:projeto_social/pages/gallery.dart';
 import 'package:projeto_social/pages/start.dart';
 
 class MainScreen extends StatefulWidget {
@@ -47,11 +47,11 @@ class _MainScreenState extends State<MainScreen> {
             ListTile(
               onTap: () {
                 setState(() {
-                  body = const Photos();
+                  body = const Gallery();
                 });
               },
               title: const Text(
-                'Fotos',
+                'Galeria',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
