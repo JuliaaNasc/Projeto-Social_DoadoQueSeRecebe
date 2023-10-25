@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:projeto_social/data/developers_data.dart';
 import 'package:projeto_social/models/developer_model.dart';
 
 class DeveloperScreen extends StatelessWidget {

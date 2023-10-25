@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class Contribute extends StatelessWidget {
   const Contribute({super.key});
@@ -24,7 +25,6 @@ class Contribute extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: 110,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: const [
@@ -35,7 +35,7 @@ class Contribute extends StatelessWidget {
                     ],
                     color: Colors.grey.shade100,
                   ),
-                  child: const Padding(
+                  child: Padding(
                     padding: EdgeInsets.all(15),
                     child: Row(
                       children: [
@@ -43,7 +43,7 @@ class Contribute extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 'Pix',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -51,7 +51,35 @@ class Contribute extends StatelessWidget {
                                   color: Colors.black,
                                 ),
                               ),
+                              const Text(
+                                'Sua doação faz a diferença. Com apenas alguns reais, você pode contribuir para mudar vidas e criar um impacto duradouro.',
+                                textAlign: TextAlign.justify,
+                              ),
+                             const SizedBox(height: 10),
+                              SizedBox(
+                                width: 100,
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Color.fromARGB(255, 237, 16, 0)),
+                                  ),
+                                  onPressed: () {},
+                                  child: const Text(
+                                    'Doar',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 150,
+                          child: Lottie.asset(
+                            'assets/gif_money.json',
                           ),
                         ),
                       ],
@@ -62,7 +90,6 @@ class Contribute extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: 110,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: const [
@@ -73,7 +100,7 @@ class Contribute extends StatelessWidget {
                     ],
                     color: Colors.grey.shade100,
                   ),
-                  child: const Padding(
+                  child: Padding(
                     padding: EdgeInsets.all(15),
                     child: Row(
                       children: [
@@ -81,7 +108,7 @@ class Contribute extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 'Roupas',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -89,8 +116,34 @@ class Contribute extends StatelessWidget {
                                   color: Colors.black,
                                 ),
                               ),
+                              const Text(
+                                'Sua contribuição de roupas não apenas desafoga seu armário, mas também enche o coração de alguém de esperança.',
+                                textAlign: TextAlign.justify,
+                              ),
+                                SizedBox(height: 10),
+                              SizedBox(
+                                width: 100,
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Color.fromARGB(255, 237, 16, 0)),
+                                  ),
+                                  onPressed: () {},
+                                  child: const Text(
+                                    'Doar',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
+                        ),
+                        SizedBox(
+                          width: 160,
+                          child: Lottie.asset('assets/gif_clothes.json'),
                         ),
                       ],
                     ),
@@ -100,7 +153,6 @@ class Contribute extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: 110,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: const [
@@ -111,15 +163,15 @@ class Contribute extends StatelessWidget {
                     ],
                     color: Colors.grey.shade100,
                   ),
-                  child: const Padding(
+                  child: Padding(
                     padding: EdgeInsets.all(15),
                     child: Row(
                       children: [
-                        Expanded(
+                       Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 'Alimentos',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -127,7 +179,36 @@ class Contribute extends StatelessWidget {
                                   color: Colors.black,
                                 ),
                               ),
+                              const Text(
+                                'Nada é mais gratificante do que alimentar a esperança. Doe alimentos e ilumine vidas.',
+                                textAlign: TextAlign.justify,
+                              ),
+                                SizedBox(height: 10),
+                              SizedBox(
+                                width: 100,
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Color.fromARGB(255, 237, 16, 0)),
+                                  ),
+                                  onPressed: () {},
+                                  child: const Text(
+                                    'Doar',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        SizedBox(
+                          width: 150,
+                          child: Lottie.asset(
+                            'assets/gif_food.json',
                           ),
                         ),
                       ],
@@ -138,7 +219,6 @@ class Contribute extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: 110,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: const [
@@ -149,15 +229,15 @@ class Contribute extends StatelessWidget {
                     ],
                     color: Colors.grey.shade100,
                   ),
-                  child: const Padding(
+                  child: Padding(
                     padding: EdgeInsets.all(15),
                     child: Row(
                       children: [
-                        Expanded(
+                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 'Brinquedos',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -165,7 +245,36 @@ class Contribute extends StatelessWidget {
                                   color: Colors.black,
                                 ),
                               ),
+                              const Text(
+                                'Cada brinquedo que você doa é uma oportunidade para uma criança sorrir, aprender e crescer.',
+                                textAlign: TextAlign.justify,
+                              ),
+                                SizedBox(height: 10),
+                              SizedBox(
+                                width: 100,
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Color.fromARGB(255, 237, 16, 0)),
+                                  ),
+                                  onPressed: () {},
+                                  child: const Text(
+                                    'Doar',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        SizedBox(
+                          width: 150,
+                          child: Lottie.asset(
+                            'assets/gif_toys.json',
                           ),
                         ),
                       ],
