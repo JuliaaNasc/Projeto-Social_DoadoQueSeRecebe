@@ -230,10 +230,10 @@ List<DeveloperModel> developers = [
     photo: null,
     name: 'Savio Marques De Carvalho',
     descrition: 'Sonoplasta',
-    email: null,
+    email: 'savio.marques0302@gmail.com',
     github: null,
     linkedin: null,
-    instagram: null,
+    instagram: '@dre.marques_',
   ),
   DeveloperModel(
     photo: null,
