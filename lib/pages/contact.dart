@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:projeto_social/pages/contribute.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatelessWidget {
   const Contact({super.key});
@@ -16,12 +17,20 @@ class Contact extends StatelessWidget {
               child: Column(
                 children: [
                   const SizedBox(height: 10),
-                  const ListTile(
-                    leading: Icon(
+                  ListTile(
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse(
+                          'https://www.instagram.com/institutodoandoqueserecebe',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    },
+                    leading: const Icon(
                       FontAwesomeIcons.instagram,
                       size: 35,
                     ),
-                    title: Text(
+                    title: const Text(
                       'INSTAGRAM ',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -32,12 +41,20 @@ class Contact extends StatelessWidget {
                     subtitle: Text('@INSTITUTODOANDOQUESERECEBE'),
                   ),
                   SizedBox(height: 10),
-                  const ListTile(
-                    leading: Icon(
+                  ListTile(
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse(
+                          'https://api.whatsapp.com/send?phone=5585988970084 ',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    },
+                    leading: const Icon(
                       FontAwesomeIcons.whatsapp,
                       size: 35,
                     ),
-                    title: Text(
+                    title: const Text(
                       'WHATSAPP ',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -48,12 +65,20 @@ class Contact extends StatelessWidget {
                     subtitle: Text('(85) 9 8897 0084'),
                   ),
                   SizedBox(height: 10),
-                  const ListTile(
-                    leading: Icon(
+                  ListTile(
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse(
+                          ' ',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    },
+                    leading: const Icon(
                       Icons.web,
                       size: 35,
                     ),
-                    title: Text(
+                    title: const Text(
                       'SITE ',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -64,12 +89,20 @@ class Contact extends StatelessWidget {
                     subtitle: Text('. . .'),
                   ),
                   SizedBox(height: 10),
-                  const ListTile(
-                    leading: Icon(
+                  ListTile(
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse(
+                          'tel:85988105663',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    },
+                    leading: const Icon(
                       Icons.phone_rounded,
                       size: 35,
                     ),
-                    title: Text(
+                    title: const Text(
                       'TELEFONE ',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -80,12 +113,20 @@ class Contact extends StatelessWidget {
                     subtitle: Text('(85) 9 8897 0084'),
                   ),
                   SizedBox(height: 10),
-                  const ListTile(
-                    leading: Icon(
+                  ListTile(
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse(
+                          'mailto:institutodoandoqueserecebe@gmail.com',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    },
+                    leading: const Icon(
                       Icons.email,
                       size: 35,
                     ),
-                    title: Text(
+                    title: const Text(
                       'E-MAIL ',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -93,14 +134,22 @@ class Contact extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: Text('. . .'),
+                    subtitle: Text('INSTITUTODOANDOQUESERECEBE@GMAIL.COM'),
                   ),
-                  const ListTile(
-                    leading: Icon(
+                  ListTile(
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse(
+                          ' ',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    },
+                    leading: const Icon(
                       Icons.location_pin,
                       size: 35,
                     ),
-                    title: Text(
+                    title: const Text(
                       'LOCALIZAÇÃO ',
                       style: TextStyle(
                         fontFamily: 'Montserrat',

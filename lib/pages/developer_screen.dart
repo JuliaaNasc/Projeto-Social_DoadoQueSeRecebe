@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:projeto_social/models/developer_model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DeveloperScreen extends StatelessWidget {
   DeveloperScreen({
@@ -62,6 +63,16 @@ class DeveloperScreen extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  onTap: () {
+                    if (developer.email != null) {
+                      launchUrl(
+                        Uri.parse(
+                          'mailto:${developer.email}',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    }
+                  },
                   leading: const Icon(
                     Icons.email,
                     size: 37,
@@ -81,6 +92,16 @@ class DeveloperScreen extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  onTap: () {
+                    if (developer.github != null) {
+                      launchUrl(
+                        Uri.parse(
+                          developer.github!,
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    }
+                  },
                   leading: const Icon(
                     FontAwesomeIcons.github,
                     size: 37,
@@ -100,6 +121,16 @@ class DeveloperScreen extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  onTap: () {
+                    if (developer.linkedin != null) {
+                      launchUrl(
+                        Uri.parse(
+                          developer.linkedin!,
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    }
+                  },
                   leading: const Icon(
                     FontAwesomeIcons.linkedin,
                     size: 37,
@@ -119,6 +150,18 @@ class DeveloperScreen extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  onTap: () {
+                    if (developer.instagram != null) {
+                      String adulteracao =
+                          developer.instagram!.replaceFirst('@', '');
+                      launchUrl(
+                        Uri.parse(
+                          'https://www.instagram.com/${adulteracao}',
+                        ),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    }
+                  },
                   leading: const Icon(
                     FontAwesomeIcons.instagram,
                     size: 37,

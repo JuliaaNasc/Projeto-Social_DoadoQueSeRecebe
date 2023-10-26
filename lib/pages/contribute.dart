@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class Contribute extends StatelessWidget {
   const Contribute({super.key});
@@ -230,7 +232,15 @@ class Contribute extends StatelessWidget {
                                                         WrapAlignment.center,
                                                     children: [
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          launchUrl(
+                                                            Uri.parse(
+                                                              'https://www.instagram.com/institutodoandoqueserecebe',
+                                                            ),
+                                                            mode: LaunchMode
+                                                                .externalApplication,
+                                                          );
+                                                        },
                                                         child: const Text(
                                                           'Instagram',
                                                           style: TextStyle(
@@ -242,7 +252,15 @@ class Contribute extends StatelessWidget {
                                                       ),
                                                       SizedBox(width: 10),
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          launchUrl(
+                                                            Uri.parse(
+                                                              'https://api.whatsapp.com/send?phone=5585988970084',
+                                                            ),
+                                                            mode: LaunchMode
+                                                                .externalApplication,
+                                                          );
+                                                        },
                                                         child: const Text(
                                                           'WhatsApp',
                                                           style: TextStyle(
@@ -357,7 +375,15 @@ class Contribute extends StatelessWidget {
                                                         WrapAlignment.center,
                                                     children: [
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          launchUrl(
+                                                            Uri.parse(
+                                                              'https://www.instagram.com/institutodoandoqueserecebe',
+                                                            ),
+                                                            mode: LaunchMode
+                                                                .externalApplication,
+                                                          );
+                                                        },
                                                         child: const Text(
                                                           'Instagram',
                                                           style: TextStyle(
@@ -369,7 +395,15 @@ class Contribute extends StatelessWidget {
                                                       ),
                                                       SizedBox(width: 10),
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          launchUrl(
+                                                            Uri.parse(
+                                                              'https://api.whatsapp.com/send?phone=5585988970084',
+                                                            ),
+                                                            mode: LaunchMode
+                                                                .externalApplication,
+                                                          );
+                                                        },
                                                         child: const Text(
                                                           'WhatsApp',
                                                           style: TextStyle(
@@ -487,7 +521,15 @@ class Contribute extends StatelessWidget {
                                                         WrapAlignment.center,
                                                     children: [
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          launchUrl(
+                                                            Uri.parse(
+                                                              'https://www.instagram.com/institutodoandoqueserecebe',
+                                                            ),
+                                                            mode: LaunchMode
+                                                                .externalApplication,
+                                                          );
+                                                        },
                                                         child: const Text(
                                                           'Instagram',
                                                           style: TextStyle(
@@ -499,7 +541,15 @@ class Contribute extends StatelessWidget {
                                                       ),
                                                       SizedBox(width: 10),
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          launchUrl(
+                                                            Uri.parse(
+                                                              'https://api.whatsapp.com/send?phone=5585988970084',
+                                                            ),
+                                                            mode: LaunchMode
+                                                                .externalApplication,
+                                                          );
+                                                        },
                                                         child: const Text(
                                                           'WhatsApp',
                                                           style: TextStyle(
