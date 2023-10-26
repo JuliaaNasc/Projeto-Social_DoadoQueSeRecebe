@@ -1,5 +1,8 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:super_clipboard/super_clipboard.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -66,10 +69,7 @@ class Contribute extends StatelessWidget {
                                       width: 100,
                                       child: ElevatedButton(
                                         style: ButtonStyle(
-                                          backgroundColor:
-                                              MaterialStateProperty.all(
-                                                  Color.fromARGB(
-                                                      255, 237, 16, 0)),
+                                          backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 237, 16, 0)),
                                         ),
                                         onPressed: () {
                                           showDialog(
@@ -82,8 +82,7 @@ class Contribute extends StatelessWidget {
                                                       child: Text(
                                                         'Para efetuar a sua doação escolha um dos meios abaixo:',
                                                         style: TextStyle(
-                                                          fontWeight:
-                                                              FontWeight.bold,
+                                                          fontWeight: FontWeight.bold,
                                                           fontSize: 20,
                                                         ),
                                                       ),
@@ -97,30 +96,109 @@ class Contribute extends StatelessWidget {
                                                   ],
                                                 ),
                                                 content: Padding(
-                                                  padding:
-                                                      const EdgeInsets.fromLTRB(
-                                                          0, 10, 0, 10),
+                                                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                                                   child: Wrap(
                                                     children: [
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () async {
+                                                          DataWriterItem item = DataWriterItem();
+                                                          
+                                                          item.add(Formats.plainText('plain text'));
+                                                           await ClipboardWriter.instance.write([item]);
+                                                          Navigator.of(context).pop();
+                                                          showDialog(
+                                                              context: context,
+                                                              builder: (context) {
+                                                                return AlertDialog(
+                                                                  title: Row(
+                                                                    children: [
+                                                                      const Expanded(
+                                                                        child: Text(
+                                                                          'Chave pix copiada com sucesso',
+                                                                          style: TextStyle(
+                                                                            fontWeight: FontWeight.bold,
+                                                                            fontSize: 20,
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                      IconButton(
+                                                                        onPressed: () {
+                                                                          Navigator.of(context).pop();
+                                                                        },
+                                                                        icon: const Icon(
+                                                                          Icons.close,
+                                                                          size: 30,
+                                                                          color: Colors.red,
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                  content: const Text(
+                                                                    '43.153.689/0001-05',
+                                                                    style: TextStyle(
+                                                                      fontWeight: FontWeight.bold,
+                                                                      fontSize: 18,
+                                                                    ),
+                                                                  ),
+                                                                );
+                                                              });
+                                                        },
                                                         child: const Text(
                                                           'Copiar chave',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
                                                       ),
                                                       SizedBox(width: 10),
                                                       ElevatedButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          Navigator.of(context).pop();
+                                                          showDialog(
+                                                            context: context,
+                                                            builder: (context) {
+                                                              return AlertDialog(
+                                                                title: Row(
+                                                                  children: [
+                                                                    const Expanded(
+                                                                      child: Text(
+                                                                        'Escaneie o QRcode abaixo:',
+                                                                        style: TextStyle(
+                                                                          fontWeight: FontWeight.bold,
+                                                                          fontSize: 20,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    IconButton(
+                                                                      onPressed: () {
+                                                                        Navigator.of(context).pop();
+                                                                      },
+                                                                      icon: const Icon(
+                                                                        Icons.close,
+                                                                        size: 30,
+                                                                        color: Colors.red,
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                                content: Padding(
+                                                                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                                                                  child: SizedBox(
+                                                                    height: 200,
+                                                                    child: Image.asset(
+                                                                      'assets/qrcode-pix_instituicao.png',
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              );
+                                                            },
+                                                          );
+                                                        },
                                                         child: const Text(
                                                           'Gerar QRcode',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
@@ -193,10 +271,7 @@ class Contribute extends StatelessWidget {
                                       width: 100,
                                       child: ElevatedButton(
                                         style: ButtonStyle(
-                                          backgroundColor:
-                                              MaterialStateProperty.all(
-                                                  Color.fromARGB(
-                                                      255, 237, 16, 0)),
+                                          backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 237, 16, 0)),
                                         ),
                                         onPressed: () {
                                           showDialog(
@@ -209,8 +284,7 @@ class Contribute extends StatelessWidget {
                                                       child: Text(
                                                         'Para efetuar a sua doação escolha um dos meios abaixo:',
                                                         style: TextStyle(
-                                                          fontWeight:
-                                                              FontWeight.bold,
+                                                          fontWeight: FontWeight.bold,
                                                           fontSize: 20,
                                                         ),
                                                       ),
@@ -224,12 +298,9 @@ class Contribute extends StatelessWidget {
                                                   ],
                                                 ),
                                                 content: Padding(
-                                                  padding:
-                                                      const EdgeInsets.fromLTRB(
-                                                          0, 10, 0, 10),
+                                                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                                                   child: Wrap(
-                                                    alignment:
-                                                        WrapAlignment.center,
+                                                    alignment: WrapAlignment.center,
                                                     children: [
                                                       ElevatedButton(
                                                         onPressed: () {
@@ -237,15 +308,13 @@ class Contribute extends StatelessWidget {
                                                             Uri.parse(
                                                               'https://www.instagram.com/institutodoandoqueserecebe',
                                                             ),
-                                                            mode: LaunchMode
-                                                                .externalApplication,
+                                                            mode: LaunchMode.externalApplication,
                                                           );
                                                         },
                                                         child: const Text(
                                                           'Instagram',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
@@ -257,15 +326,13 @@ class Contribute extends StatelessWidget {
                                                             Uri.parse(
                                                               'https://api.whatsapp.com/send?phone=5585988970084',
                                                             ),
-                                                            mode: LaunchMode
-                                                                .externalApplication,
+                                                            mode: LaunchMode.externalApplication,
                                                           );
                                                         },
                                                         child: const Text(
                                                           'WhatsApp',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
@@ -336,10 +403,7 @@ class Contribute extends StatelessWidget {
                                       width: 100,
                                       child: ElevatedButton(
                                         style: ButtonStyle(
-                                          backgroundColor:
-                                              MaterialStateProperty.all(
-                                                  Color.fromARGB(
-                                                      255, 237, 16, 0)),
+                                          backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 237, 16, 0)),
                                         ),
                                         onPressed: () {
                                           showDialog(
@@ -352,8 +416,7 @@ class Contribute extends StatelessWidget {
                                                       child: Text(
                                                         'Para efetuar sua doação escolha um dos meios abaixo:',
                                                         style: TextStyle(
-                                                          fontWeight:
-                                                              FontWeight.bold,
+                                                          fontWeight: FontWeight.bold,
                                                           fontSize: 20,
                                                         ),
                                                       ),
@@ -367,12 +430,9 @@ class Contribute extends StatelessWidget {
                                                   ],
                                                 ),
                                                 content: Padding(
-                                                  padding:
-                                                      const EdgeInsets.fromLTRB(
-                                                          0, 10, 0, 10),
+                                                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                                                   child: Wrap(
-                                                    alignment:
-                                                        WrapAlignment.center,
+                                                    alignment: WrapAlignment.center,
                                                     children: [
                                                       ElevatedButton(
                                                         onPressed: () {
@@ -380,15 +440,13 @@ class Contribute extends StatelessWidget {
                                                             Uri.parse(
                                                               'https://www.instagram.com/institutodoandoqueserecebe',
                                                             ),
-                                                            mode: LaunchMode
-                                                                .externalApplication,
+                                                            mode: LaunchMode.externalApplication,
                                                           );
                                                         },
                                                         child: const Text(
                                                           'Instagram',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
@@ -400,15 +458,13 @@ class Contribute extends StatelessWidget {
                                                             Uri.parse(
                                                               'https://api.whatsapp.com/send?phone=5585988970084',
                                                             ),
-                                                            mode: LaunchMode
-                                                                .externalApplication,
+                                                            mode: LaunchMode.externalApplication,
                                                           );
                                                         },
                                                         child: const Text(
                                                           'WhatsApp',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
@@ -482,10 +538,7 @@ class Contribute extends StatelessWidget {
                                       width: 100,
                                       child: ElevatedButton(
                                         style: ButtonStyle(
-                                          backgroundColor:
-                                              MaterialStateProperty.all(
-                                                  Color.fromARGB(
-                                                      255, 237, 16, 0)),
+                                          backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 237, 16, 0)),
                                         ),
                                         onPressed: () {
                                           showDialog(
@@ -498,8 +551,7 @@ class Contribute extends StatelessWidget {
                                                       child: Text(
                                                         'Para efetuar sua doação escolha um dos meios abaixo:',
                                                         style: TextStyle(
-                                                          fontWeight:
-                                                              FontWeight.bold,
+                                                          fontWeight: FontWeight.bold,
                                                           fontSize: 20,
                                                         ),
                                                       ),
@@ -513,12 +565,9 @@ class Contribute extends StatelessWidget {
                                                   ],
                                                 ),
                                                 content: Padding(
-                                                  padding:
-                                                      const EdgeInsets.fromLTRB(
-                                                          0, 10, 0, 10),
+                                                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                                                   child: Wrap(
-                                                    alignment:
-                                                        WrapAlignment.center,
+                                                    alignment: WrapAlignment.center,
                                                     children: [
                                                       ElevatedButton(
                                                         onPressed: () {
@@ -526,15 +575,13 @@ class Contribute extends StatelessWidget {
                                                             Uri.parse(
                                                               'https://www.instagram.com/institutodoandoqueserecebe',
                                                             ),
-                                                            mode: LaunchMode
-                                                                .externalApplication,
+                                                            mode: LaunchMode.externalApplication,
                                                           );
                                                         },
                                                         child: const Text(
                                                           'Instagram',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
@@ -546,15 +593,13 @@ class Contribute extends StatelessWidget {
                                                             Uri.parse(
                                                               'https://api.whatsapp.com/send?phone=5585988970084',
                                                             ),
-                                                            mode: LaunchMode
-                                                                .externalApplication,
+                                                            mode: LaunchMode.externalApplication,
                                                           );
                                                         },
                                                         child: const Text(
                                                           'WhatsApp',
                                                           style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                            fontWeight: FontWeight.bold,
                                                             color: Colors.black,
                                                           ),
                                                         ),
