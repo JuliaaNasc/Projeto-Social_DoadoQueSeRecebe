@@ -32,6 +32,7 @@ class _MainScreenState extends State<MainScreen> {
             ),
             const SizedBox(height: 20),
             ListTile(
+              leading: Icon(Icons.home),
               onTap: () {
                 setState(() {
                   body = const Start();
@@ -45,6 +46,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
+              leading: Icon(Icons.photo_library),
               onTap: () {
                 setState(() {
                   body = const Gallery();
@@ -58,9 +60,12 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
+              leading: Icon(Icons.group),
               onTap: () {
                 setState(() {
-                  body = const Contact();
+                  body = Contact(
+                    hasAppBar: false,
+                  );
                 });
               },
               title: const Text(
@@ -69,9 +74,13 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
+              leading: 
+              Icon(Icons.info),
               onTap: () {
                 setState(() {
-                  body = const AboutUs();
+                  body = AboutUs(
+                    hasAppBar: true,
+                  );
                 });
               },
               title: const Text(
@@ -82,9 +91,12 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
+              leading: Icon(Icons.volunteer_activism_outlined),
               onTap: () {
                 setState(() {
-                  body = const Contribute();
+                  body = Contribute(
+                    hasAppBar: true,
+                  );
                 });
               },
               title: const Text(
@@ -93,6 +105,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
+              leading: Icon(Icons.code),
               onTap: () {
                 setState(() {
                   body = const Developer();

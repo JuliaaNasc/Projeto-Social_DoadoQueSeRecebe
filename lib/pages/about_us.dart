@@ -2,11 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:projeto_social/pages/contribute.dart';
 
 class AboutUs extends StatelessWidget {
-  const AboutUs({super.key});
+  AboutUs({
+    required this.hasAppBar,
+    super.key,
+  });
+
+  bool hasAppBar;
 
   @override
   Widget build(BuildContext context) {
+    AppBar? appbar = null;
+    if (hasAppBar) {
+      appbar = AppBar(
+        toolbarHeight: 110,
+        centerTitle: true,
+        scrolledUnderElevation: 1,
+        backgroundColor: Colors.white,
+        title: Image.asset(
+          'assets/logo.png',
+          width: 200,
+        ),
+      );
+    }
     return Scaffold(
+      appBar: appbar,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -253,7 +272,9 @@ class AboutUs extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (c) {
-                      return Contribute();
+                      return Contribute(
+                        hasAppBar: true,
+                      );
                     },
                   ),
                 );
@@ -269,8 +290,12 @@ class AboutUs extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            Image.asset(
-              'assets/wave_red.png',
+            Row(
+              children: [
+                Expanded(
+                  child: Image.asset('assets/wave_red.png', fit: BoxFit.fitWidth),
+                ),
+              ],
             ),
           ],
         ),

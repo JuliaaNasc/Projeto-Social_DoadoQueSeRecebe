@@ -47,7 +47,9 @@ class Start extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (c) {
-                                return const AboutUs();
+                                return AboutUs(
+                                  hasAppBar: true,
+                                );
                               },
                             ),
                           );
@@ -143,7 +145,9 @@ class Start extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (c) {
-                                return const Contact();
+                                return Contact(
+                                  hasAppBar: true,
+                                );
                               },
                             ),
                           );
@@ -191,7 +195,9 @@ class Start extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (c) {
-                                return Contribute();
+                                return Contribute(
+                                  hasAppBar: true,
+                                );
                               },
                             ),
                           );
@@ -397,7 +403,9 @@ class Start extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (c) {
-                      return Contribute();
+                      return Contribute(
+                        hasAppBar: true,
+                      );
                     },
                   ),
                 );
@@ -413,8 +421,15 @@ class Start extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            Image.asset(
-              'assets/wave_red.png',
+            Row(
+              children: [
+                Expanded(
+                  child: Image.asset(
+                    'assets/wave_red.png',
+                    fit: BoxFit.fitWidth,
+                  ),
+                ),
+              ],
             ),
           ],
         ),

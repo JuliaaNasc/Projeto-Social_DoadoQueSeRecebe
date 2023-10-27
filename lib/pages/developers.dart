@@ -69,8 +69,15 @@ class Developer extends StatelessWidget {
                 );
               },
             ),
-            Image.asset(
-              'assets/wave_red.png',
+            Row(
+              children: [
+                Expanded(
+                  child: Image.asset(
+                    'assets/wave_red.png',
+                    fit: BoxFit.fitWidth,
+                  ),
+                ),
+              ],
             ),
           ],
         ),

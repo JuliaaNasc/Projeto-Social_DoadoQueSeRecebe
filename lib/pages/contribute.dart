@@ -7,11 +7,30 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class Contribute extends StatelessWidget {
-  const Contribute({super.key});
+ Contribute({
+    required this.hasAppBar,
+    super.key,
+  });
+
+  bool hasAppBar;
 
   @override
   Widget build(BuildContext context) {
+    AppBar? appbar = null;
+    if (hasAppBar) {
+      appbar = AppBar(
+        toolbarHeight: 110,
+        centerTitle: true,
+        scrolledUnderElevation: 1,
+        backgroundColor: Colors.white,
+        title: Image.asset(
+          'assets/logo.png',
+          width: 200,
+        ),
+      );
+    }
     return Scaffold(
+       appBar: appbar,
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -102,9 +121,9 @@ class Contribute extends StatelessWidget {
                                                       ElevatedButton(
                                                         onPressed: () async {
                                                           DataWriterItem item = DataWriterItem();
-                                                          
+
                                                           item.add(Formats.plainText('plain text'));
-                                                           await ClipboardWriter.instance.write([item]);
+                                                          await ClipboardWriter.instance.write([item]);
                                                           Navigator.of(context).pop();
                                                           showDialog(
                                                               context: context,
@@ -639,8 +658,15 @@ class Contribute extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-              Image.asset(
-                'assets/wave_red.png',
+              Row(
+                children: [
+                  Expanded(
+                    child: Image.asset(
+                      'assets/wave_red.png',
+                      fit: BoxFit.fitWidth,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

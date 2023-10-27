@@ -4,11 +4,30 @@ import 'package:projeto_social/pages/contribute.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatelessWidget {
-  const Contact({super.key});
+   Contact({
+    required  this.hasAppBar,
+    super.key,
+  });
+
+  bool hasAppBar;
 
   @override
   Widget build(BuildContext context) {
+    AppBar? appbar = null;
+    if(hasAppBar ){
+      appbar = AppBar(
+        toolbarHeight: 110,
+        centerTitle: true,
+        scrolledUnderElevation: 1,
+        backgroundColor: Colors.white,
+        title: Image.asset(
+          'assets/logo.png',
+          width: 200,
+        ),
+      );
+    }
     return Scaffold(
+      appBar: appbar,
       body: DefaultTabController(
           length: 4,
           child: SingleChildScrollView(
@@ -171,7 +190,9 @@ class Contact extends StatelessWidget {
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (c) {
-                            return Contribute();
+                            return Contribute(
+                               hasAppBar: true,
+                            );
                           },
                         ),
                       );
@@ -187,8 +208,12 @@ class Contact extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  Image.asset(
-                    'assets/wave_red.png',
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Image.asset('assets/wave_red.png', fit: BoxFit.fitWidth),
+                      ),
+                    ],
                   ),
                 ],
               ),
