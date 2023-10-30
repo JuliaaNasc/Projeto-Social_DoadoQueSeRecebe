@@ -122,7 +122,7 @@ class Contribute extends StatelessWidget {
                                                         onPressed: () async {
                                                           DataWriterItem item = DataWriterItem();
 
-                                                          item.add(Formats.plainText('plain text'));
+                                                          item.add(Formats.plainText('43.153.689/0001-05                                                                                                                                                                                                                                                                                                                                                                                                                              '));
                                                           await ClipboardWriter.instance.write([item]);
                                                           Navigator.of(context).pop();
                                                           showDialog(

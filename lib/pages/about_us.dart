@@ -280,7 +280,7 @@ class AboutUs extends StatelessWidget {
                 );
               },
               child: const Text(
-                'Contribue Conosco',
+                'Contribua Conosco',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,

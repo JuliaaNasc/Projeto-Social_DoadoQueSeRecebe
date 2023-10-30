@@ -4,10 +4,28 @@ import 'package:projeto_social/models/developer_model.dart';
 import 'package:projeto_social/pages/developer_screen.dart';
 
 class Developer extends StatelessWidget {
-  const Developer({super.key});
+  Developer({
+    required this.hasAppBar,
+    super.key,
+  });
+
+  bool hasAppBar;
 
   @override
   Widget build(BuildContext context) {
+    AppBar? appbar = null;
+    if (hasAppBar) {
+      appbar = AppBar(
+        toolbarHeight: 110,
+        centerTitle: true,
+        scrolledUnderElevation: 1,
+        backgroundColor: Colors.white,
+        title: Image.asset(
+          'assets/logo.png',
+          width: 200,
+        ),
+      );
+    }
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

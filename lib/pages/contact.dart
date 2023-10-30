@@ -4,8 +4,8 @@ import 'package:projeto_social/pages/contribute.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatelessWidget {
-   Contact({
-    required  this.hasAppBar,
+  Contact({
+    required this.hasAppBar,
     super.key,
   });
 
@@ -14,7 +14,7 @@ class Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AppBar? appbar = null;
-    if(hasAppBar ){
+    if (hasAppBar) {
       appbar = AppBar(
         toolbarHeight: 110,
         centerTitle: true,
@@ -49,6 +49,7 @@ class Contact extends StatelessWidget {
                       FontAwesomeIcons.instagram,
                       size: 35,
                     ),
+                    trailing: Icon(Icons.open_in_new),
                     title: const Text(
                       'INSTAGRAM ',
                       style: TextStyle(
@@ -73,6 +74,7 @@ class Contact extends StatelessWidget {
                       FontAwesomeIcons.whatsapp,
                       size: 35,
                     ),
+                    trailing: Icon(Icons.open_in_new),
                     title: const Text(
                       'WHATSAPP ',
                       style: TextStyle(
@@ -97,6 +99,7 @@ class Contact extends StatelessWidget {
                       Icons.web,
                       size: 35,
                     ),
+                    trailing: Icon(Icons.open_in_new),
                     title: const Text(
                       'SITE ',
                       style: TextStyle(
@@ -121,6 +124,7 @@ class Contact extends StatelessWidget {
                       Icons.phone_rounded,
                       size: 35,
                     ),
+                    trailing: Icon(Icons.open_in_new),
                     title: const Text(
                       'TELEFONE ',
                       style: TextStyle(
@@ -145,6 +149,7 @@ class Contact extends StatelessWidget {
                       Icons.email,
                       size: 35,
                     ),
+                    trailing: Icon(Icons.open_in_new),
                     title: const Text(
                       'E-MAIL ',
                       style: TextStyle(
@@ -159,7 +164,7 @@ class Contact extends StatelessWidget {
                     onTap: () {
                       launchUrl(
                         Uri.parse(
-                          ' ',
+                          'https://maps.google.com/?q=-3.7946149,-38.5858287',
                         ),
                         mode: LaunchMode.externalApplication,
                       );
@@ -168,6 +173,7 @@ class Contact extends StatelessWidget {
                       Icons.location_pin,
                       size: 35,
                     ),
+                    trailing: Icon(Icons.open_in_new),
                     title: const Text(
                       'LOCALIZAÇÃO ',
                       style: TextStyle(
@@ -176,7 +182,7 @@ class Contact extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: Text('. . .'),
+                    subtitle: Text('R. Einstein, 1322 - Vila Peri, Fortaleza - CE, 60730-145'),
                   ),
                   const SizedBox(height: 30),
                   OutlinedButton(
@@ -191,14 +197,14 @@ class Contact extends StatelessWidget {
                         MaterialPageRoute(
                           builder: (c) {
                             return Contribute(
-                               hasAppBar: true,
+                              hasAppBar: true,
                             );
                           },
                         ),
                       );
                     },
                     child: const Text(
-                      'Contribue Conosco',
+                      'Contribua Conosco',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,

@@ -79,7 +79,7 @@ class _MainScreenState extends State<MainScreen> {
               onTap: () {
                 setState(() {
                   body = AboutUs(
-                    hasAppBar: true,
+                    hasAppBar: false,
                   );
                 });
               },
@@ -95,7 +95,7 @@ class _MainScreenState extends State<MainScreen> {
               onTap: () {
                 setState(() {
                   body = Contribute(
-                    hasAppBar: true,
+                    hasAppBar: false,
                   );
                 });
               },
@@ -108,7 +108,9 @@ class _MainScreenState extends State<MainScreen> {
               leading: Icon(Icons.code),
               onTap: () {
                 setState(() {
-                  body = const Developer();
+                  body = Developer(
+                    hasAppBar: false,
+                  );
                 });
               },
               title: const Text(
