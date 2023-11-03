@@ -91,13 +91,15 @@ class Start extends StatelessWidget {
                       right: 130,
                       child: OutlinedButton(
                         style: OutlinedButton.styleFrom(
-                          side:const BorderSide(width: 2, color: Colors.white),
+                          side: const BorderSide(width: 2, color: Colors.white),
                         ),
                         onPressed: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (c) {
-                                return const Gallery();
+                                return Gallery(
+                                  hasAppBar: true,
+                                );
                               },
                             ),
                           );
@@ -434,7 +436,6 @@ class Start extends StatelessWidget {
           ],
         ),
       ),
-    
     );
   }
 }

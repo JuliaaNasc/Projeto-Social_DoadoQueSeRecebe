@@ -3,8 +3,8 @@ import 'package:projeto_social/data/developers_data.dart';
 import 'package:projeto_social/models/developer_model.dart';
 import 'package:projeto_social/pages/developer_screen.dart';
 
-class Developer extends StatelessWidget {
-  Developer({
+class Developers extends StatelessWidget {
+  Developers({
     required this.hasAppBar,
     super.key,
   });
@@ -48,15 +48,22 @@ class Developer extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        const CircleAvatar(
+                         CircleAvatar(
                           backgroundColor: Colors.black,
                           radius: 38,
                           child: CircleAvatar(
                             child: Icon(
                               Icons.person,
                               size: 45,
+                              color: Colors.white70,
                             ),
-                            backgroundColor: Colors.red,
+                            foregroundImage: developer.photo != null
+                                ? Image.asset(
+                                    developer.photo!,
+                                    width: 250,
+                                  ).image
+                                : null,
+                            backgroundColor: Colors.green.shade800,
                             radius: 35,
                           ),
                         ),

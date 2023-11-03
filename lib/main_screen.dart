@@ -49,7 +49,9 @@ class _MainScreenState extends State<MainScreen> {
               leading: Icon(Icons.photo_library),
               onTap: () {
                 setState(() {
-                  body = const Gallery();
+                  body = Gallery(
+                     hasAppBar: false,
+                  );
                 });
               },
               title: const Text(
@@ -74,8 +76,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
-              leading: 
-              Icon(Icons.info),
+              leading: Icon(Icons.info),
               onTap: () {
                 setState(() {
                   body = AboutUs(
@@ -108,7 +109,7 @@ class _MainScreenState extends State<MainScreen> {
               leading: Icon(Icons.code),
               onTap: () {
                 setState(() {
-                  body = Developer(
+                  body = Developers(
                     hasAppBar: false,
                   );
                 });

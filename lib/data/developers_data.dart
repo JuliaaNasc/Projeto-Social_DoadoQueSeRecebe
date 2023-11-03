@@ -11,7 +11,7 @@ List<DeveloperModel> developers = [
     instagram: '@llaradmelo',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Antonia_Alice.jpg',
     name: 'Antonia Alice Duarte Costa',
     descrition: 'Desenvolvedor Web',
     email: 'allicexduartelx950@gmail.com',
@@ -20,7 +20,7 @@ List<DeveloperModel> developers = [
     instagram: '@allicex_duartelx',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Charlyson_De_Maria.jpg',
     name: 'Antonio Charlyson Maria Freitas Nascimento',
     descrition: null,
     email: null,
@@ -29,13 +29,13 @@ List<DeveloperModel> developers = [
     instagram: null,
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Arthur_Eugenio.jpg',
     name: 'Arthur Eugênio Dos Santos Gomes',
     descrition: 'Designer De Banner e Imagens Do Projeto',
-    email: null,
+    email: 'arthurgarrabundim@gmail.com',
     github: null,
     linkedin: null,
-    instagram: null,
+    instagram: '@arthursnts.g',
   ),
   DeveloperModel(
     photo: null,
@@ -47,7 +47,7 @@ List<DeveloperModel> developers = [
     instagram: '@bergkley',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Bruno_Andrade.jpg',
     name: 'Bruno Do Nascimento Andrade Cunha ',
     descrition: 'Desenvolvedor Web',
     email: ' bruno1918andrade@gmail.com',
@@ -56,7 +56,7 @@ List<DeveloperModel> developers = [
     instagram: '@_brunoo_andradee',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Caio_Vinicius.jpg',
     name: 'Caio Vinicius Soares Cavalcante',
     descrition: 'caioviniciuscavalcantert14@gmail.com',
     email: null,
@@ -65,7 +65,7 @@ List<DeveloperModel> developers = [
     instagram: '@sunny424205',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Carlos_Daniel.jpg',
     name: 'Carlos Daniel Araujo Da Silva',
     descrition: 'Designer De Banner e Imagens Do Projeto',
     email: 'carlosdanielaraujodasilva38@gmail.com',
@@ -74,7 +74,7 @@ List<DeveloperModel> developers = [
     instagram: '@daanielx_',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Davi_Silva.jpg',
     name: 'Davi Da Silva Vieira',
     descrition: 'Sonoplasta',
     email: 'Davi986421022@gmail.com',
@@ -83,7 +83,7 @@ List<DeveloperModel> developers = [
     instagram: '@Eubeip',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Gabrielle_Cardoso.jpg',
     name: 'Gabrielle Cardoso Melo',
     descrition: 'Designer De Banner e Imagens Do Projeto',
     email: 'gabbycardmell@gmail.com',
@@ -92,7 +92,7 @@ List<DeveloperModel> developers = [
     instagram: '@gabbycardmel',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Gabriel_Lucas.jpg',
     name: 'Gabriel Lucas Galvino De Oliveira',
     descrition: 'Designer De Banner e Imagens Do Projeto',
     email: 'galvino2109@gmail.com',
@@ -101,8 +101,8 @@ List<DeveloperModel> developers = [
     instagram: '@dukobuuu',
   ),
   DeveloperModel(
-    photo: null,
-    name: 'João Victor Abreu De Carvalho',
+    photo: 'assets/fotos_alunos/Joao_Vitor.jpg',
+    name: 'João Vitor Abreu De Carvalho',
     descrition: 'Sonoplasta',
     email: 'joaovitorum1@gmail.com',
     github: null,
@@ -110,7 +110,7 @@ List<DeveloperModel> developers = [
     instagram: '@joaovitorabreu19',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Joaquim_Oliveira.jpg',
     name: 'Joaquim Oliveira Costa Neto',
     descrition: 'Marketing Digital',
     email: 'joaquimoliveiracostaneto@gmail.com',
@@ -119,7 +119,7 @@ List<DeveloperModel> developers = [
     instagram: '@Joaquim_ocn',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Josue_Levi.jpg',
     name: 'Josué Levi Oliveira Lima',
     descrition: 'Designer De Banner e Imagens Do Projeto',
     email: 'josue.levixy@gmail.com',
@@ -128,7 +128,7 @@ List<DeveloperModel> developers = [
     instagram: '@lewisx64_',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Julia_Vitoria.jpg',
     name: 'Julia Vitória Costa Do Nascimento',
     descrition: 'Desenvolvedora Mobile',
     email: 'juliavcostan@gmail.com',
@@ -137,7 +137,7 @@ List<DeveloperModel> developers = [
     instagram: '@julia_nassc',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Lorenzo_Gabriel.jpg',
     name: 'Lorenzo Gabriel Barbosa Serradeira Cabral',
     descrition: 'Marketing Digital',
     email: 'lorenzo0508@gmail.com',
@@ -191,16 +191,16 @@ List<DeveloperModel> developers = [
     instagram: '@madah_0309',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Maria_Vitoria.jpg',
     name: 'Maria Vitória Cosmo De Sousa',
     descrition: 'Desenvolvedora Web',
     email: 'maria.v.cosmo@gmail.com',
-    github: 'https://github.com/vitoria-cosmos',
+    github: 'https://github.com/Maria_Vitoria',
     linkedin: 'https://www.linkedin.com/in/mavics/',
     instagram: '@vitoria_cosmos',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Pedro_Gustavo.jpg',
     name: 'Pedro Gustavo Colares Barbosa',
     descrition: 'Sonoplasta',
     email: 'pedro08gustavo@gmail.com',
@@ -209,7 +209,7 @@ List<DeveloperModel> developers = [
     instagram: '@085.gustacl',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Samia_Ferreira.jpg',
     name: 'Samia Masciel Ferreira',
     descrition: 'Marketing Digital e Recebimento De Doações',
     email: 'smferreiraf11@gmail.com',
@@ -221,13 +221,13 @@ List<DeveloperModel> developers = [
     photo: null,
     name: 'Samuel Henrique Da Silva',
     descrition: 'Auxiliar De Desenvolvedor Mobile',
-    email: null,
+    email: 'samuelhenrique1711@gmail.com',
     github: null,
     linkedin: null,
-    instagram: null,
+    instagram: '@samuel.henrq',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Savio_Marques.jpg',
     name: 'Savio Marques De Carvalho',
     descrition: 'Sonoplasta',
     email: 'savio.marques0302@gmail.com',
@@ -236,7 +236,7 @@ List<DeveloperModel> developers = [
     instagram: '@dre.marques_',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Victor_Tarcisio.jpg',
     name: 'Victor Tarcisio De Souza Lima',
     descrition: 'Auxiliar De Desenvolvimento Web',
     email: 'victortdsl@icloud.com',
@@ -254,7 +254,7 @@ List<DeveloperModel> developers = [
     instagram: '@vivirabeloo',
   ),
   DeveloperModel(
-    photo: null,
+    photo: 'assets/fotos_alunos/Yasmim_Aires.jpg',
     name: 'Yasmim Aires Angelim',
     descrition: 'Marketing  Digital e Recebimento De Doações',
     email: 'airesyasmim2@gmail.com',

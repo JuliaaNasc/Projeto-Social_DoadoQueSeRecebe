@@ -29,17 +29,23 @@ class DeveloperScreen extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 20),
-                const CircleAvatar(
+                CircleAvatar(
                   backgroundColor: Colors.black,
-                  radius: 72,
+                  radius: 76,
                   child: CircleAvatar(
                     backgroundColor: Colors.red,
-                    radius: 68,
-                    child: Icon(
-                      Icons.person,
-                      size: 75,
-                      color: Colors.white,
-                    ),
+                    radius: 72,
+                    foregroundImage: developer.photo != null
+                        ? Image.asset(
+                            developer.photo!,
+                            width: 250,
+                          ).image
+                        : null,
+                        child: const Icon(
+                            Icons.person,
+                            size: 75,
+                            color: Colors.white,
+                          )
                   ),
                 ),
                 const SizedBox(height: 30),
@@ -57,6 +63,25 @@ class DeveloperScreen extends StatelessWidget {
                   ),
                   subtitle: Text(
                     developer.name,
+                    style: const TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
+                ListTile(
+                  leading: const Icon(
+                    Icons.description,
+                    size: 37,
+                  ),
+                  title: const Text(
+                    'Descrição:',
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: Text(
+                    developer.descrition ?? 'Indisponivel',
                     style: const TextStyle(
                       fontSize: 18,
                     ),
@@ -152,8 +177,7 @@ class DeveloperScreen extends StatelessWidget {
                 ListTile(
                   onTap: () {
                     if (developer.instagram != null) {
-                      String adulteracao =
-                          developer.instagram!.replaceFirst('@', '');
+                      String adulteracao = developer.instagram!.replaceFirst('@', '');
                       launchUrl(
                         Uri.parse(
                           'https://www.instagram.com/${adulteracao}',
@@ -175,7 +199,7 @@ class DeveloperScreen extends StatelessWidget {
                   ),
                   subtitle: Text(
                     developer.instagram ?? 'Indisponivel',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 18,
                     ),
                   ),
