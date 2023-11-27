@@ -69,6 +69,12 @@ flutter:
   assets:
     - assets/
     - assets/fotos_alunos/
+    - assets/gifs/
+    - assets/gallery/acao_de_pascoa/
+    - assets/gallery/cursos_da_instituicao/
+    - assets/gallery/dia_das_criancas/
+    - assets/gallery/dia_das_maes/
+    - assets/gallery/natal/
      
 
   # An image asset can refer to one or more resolution-specific "variants", see

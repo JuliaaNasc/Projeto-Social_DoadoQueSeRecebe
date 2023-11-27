@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:projeto_social/pages/photos_gallery.dart';
 
 class GalleryPages extends StatelessWidget {
   GalleryPages({
@@ -27,7 +28,6 @@ class GalleryPages extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 20),
             Row(
               children: [
                 Expanded(
@@ -42,28 +42,40 @@ class GalleryPages extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: 100,
+                  width: 110,
                   child: Lottie.asset(
-                    'assets/gifs/gif_melancia.json',
+                    'assets/gifs/bear.json',
                   ),
                 ),
+                SizedBox(width: 20),
               ],
             ),
             GridView.count(
               shrinkWrap: true,
               primary: false,
               crossAxisCount: 3,
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(10),
               crossAxisSpacing: 5,
               mainAxisSpacing: 5,
               childAspectRatio: 1,
               children: imagens.map(
                 (imagem) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Image.asset(
-                      imagem,
+                  return GestureDetector(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        imagem,
+                      ),
                     ),
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (c) {
+                            return PhotosGallery(imagem: imagem);
+                          },
+                        ),
+                      );
+                    },
                   );
                 },
               ).toList(),
