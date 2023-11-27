@@ -109,7 +109,7 @@ class Contribute extends StatelessWidget {
                                                     SizedBox(
                                                       width: 125,
                                                       child: Lottie.asset(
-                                                        'assets/gif_melancia.json',
+                                                        'assets/gifs/gif_melancia.json',
                                                       ),
                                                     ),
                                                   ],
@@ -244,7 +244,7 @@ class Contribute extends StatelessWidget {
                               SizedBox(
                                 width: 150,
                                 child: Lottie.asset(
-                                  'assets/gif_money.json',
+                                  'assets/gifs/gif_money.json',
                                 ),
                               ),
                             ],
@@ -311,7 +311,7 @@ class Contribute extends StatelessWidget {
                                                     SizedBox(
                                                       width: 125,
                                                       child: Lottie.asset(
-                                                        'assets/gif_melancia.json',
+                                                        'assets/gifs/gif_melancia.json',
                                                       ),
                                                     ),
                                                   ],
@@ -377,7 +377,7 @@ class Contribute extends StatelessWidget {
                               ),
                               SizedBox(
                                 width: 160,
-                                child: Lottie.asset('assets/gif_clothes.json'),
+                                child: Lottie.asset('assets/gifs/gif_clothes.json'),
                               ),
                             ],
                           ),
@@ -443,7 +443,7 @@ class Contribute extends StatelessWidget {
                                                     SizedBox(
                                                       width: 125,
                                                       child: Lottie.asset(
-                                                        'assets/gif_melancia.json',
+                                                        'assets/gifs/gif_melancia.json',
                                                       ),
                                                     ),
                                                   ],
@@ -511,7 +511,7 @@ class Contribute extends StatelessWidget {
                               SizedBox(
                                 width: 150,
                                 child: Lottie.asset(
-                                  'assets/gif_food.json',
+                                  'assets/gifs/gif_food.json',
                                 ),
                               ),
                             ],
@@ -578,7 +578,7 @@ class Contribute extends StatelessWidget {
                                                     SizedBox(
                                                       width: 125,
                                                       child: Lottie.asset(
-                                                        'assets/gif_melancia.json',
+                                                        'assets/gifs/gif_melancia.json',
                                                       ),
                                                     ),
                                                   ],
@@ -646,7 +646,7 @@ class Contribute extends StatelessWidget {
                               SizedBox(
                                 width: 150,
                                 child: Lottie.asset(
-                                  'assets/gif_toys.json',
+                                  'assets/gifs/gif_toys.json',
                                 ),
                               ),
                             ],
