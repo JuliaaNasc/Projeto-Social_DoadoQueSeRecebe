@@ -6,11 +6,13 @@ class Album extends StatelessWidget {
     super.key,
     required this.image,
     required this.text,
+    required this.videos,
     required this.imagens,
   });
 
   String image;
   String text;
+  List<String> videos;
   List<String> imagens;
 
   @override
@@ -20,7 +22,11 @@ class Album extends StatelessWidget {
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (c) {
-              return GalleryPages(imagens: imagens, text: text);
+              return GalleryPages(
+                imagens: imagens,
+                text: text,
+                videos: videos,
+              );
             },
           ),
         );
@@ -45,7 +51,6 @@ class Album extends StatelessWidget {
               child: Image.asset(
                 image,
                 fit: BoxFit.cover,
-                
               ),
             ),
           ),

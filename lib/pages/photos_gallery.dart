@@ -7,6 +7,7 @@ class PhotosGallery extends StatelessWidget {
   });
 
   String imagem;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,11 +25,10 @@ class PhotosGallery extends StatelessWidget {
         children: [
           Expanded(child: SizedBox()),
           ClipRRect(
-              borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(20),
             child: Image.asset(
               imagem,
               width: 370,
-              
             ),
           ),
           Expanded(child: SizedBox()),

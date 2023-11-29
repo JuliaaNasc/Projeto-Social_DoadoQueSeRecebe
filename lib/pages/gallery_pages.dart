@@ -5,11 +5,13 @@ import 'package:projeto_social/pages/photos_gallery.dart';
 class GalleryPages extends StatelessWidget {
   GalleryPages({
     required this.imagens,
+    required this.videos,
     required this.text,
     super.key,
   });
 
   List<String> imagens;
+  List<String> videos;
   String text;
 
   @override
@@ -63,8 +65,12 @@ class GalleryPages extends StatelessWidget {
                   return GestureDetector(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        imagem,
+                      child: AspectRatio(
+                        aspectRatio: 1,
+                        child: Image.asset(
+                          imagem,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     onTap: () {

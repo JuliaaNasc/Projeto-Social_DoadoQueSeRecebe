@@ -75,6 +75,7 @@ flutter:
     - assets/gallery/dia_das_criancas/
     - assets/gallery/dia_das_maes/
     - assets/gallery/natal/
+    - assets/gallery/doacao/
      
 
   # An image asset can refer to one or more resolution-specific "variants", see
