@@ -70,12 +70,17 @@ flutter:
     - assets/
     - assets/fotos_alunos/
     - assets/gifs/
-    - assets/gallery/acao_de_pascoa/
-    - assets/gallery/cursos_da_instituicao/
-    - assets/gallery/dia_das_criancas/
-    - assets/gallery/dia_das_maes/
-    - assets/gallery/natal/
-    - assets/gallery/doacao/
+    - assets/gallery/acao_de_pascoa/imagens/
+    - assets/gallery/cursos_da_instituicao/imagens/
+    - assets/gallery/cursos_da_instituicao/videos/
+    - assets/gallery/dia_das_criancas/imagens/
+    - assets/gallery/dia_das_criancas/videos/
+    - assets/gallery/dia_das_maes/imagens/
+    - assets/gallery/dia_das_maes/videos/
+    - assets/gallery/natal/imagens/
+    - assets/gallery/natal/videos/
+    - assets/gallery/doacao/imagens/
+    - assets/gallery/doacao/videos/
      
 
   # An image asset can refer to one or more resolution-specific "variants", see

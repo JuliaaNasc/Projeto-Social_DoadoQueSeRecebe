@@ -70,7 +70,7 @@ class AboutUs extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(7),
                         child: Image.asset(
-                          'assets/gallery/dia_das_criancas/09.png',
+                          'assets/gallery/dia_das_criancas/imagens/09.png',
                           width: 200,
                         ),
                       ),
@@ -78,7 +78,7 @@ class AboutUs extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(builder: (c) {
                             return PhotosGallery(
-                              imagem: 'assets/gallery/dia_das_criancas/09.png',
+                              imagem: 'assets/gallery/dia_das_criancas/imagens/09.png',
                             );
                           }),
                         );
@@ -141,7 +141,7 @@ class AboutUs extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: Image.asset(
-                          'assets/gallery/doacao/04.png',
+                          'assets/gallery/doacao/imagens/04.png',
                           width: 200,
                         ),
                       ),
@@ -178,7 +178,7 @@ class AboutUs extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(7),
                       child: Image.asset(
-                        'assets/gallery/doacao/04.png',
+                        'assets/gallery/doacao/imagens/04.png',
                         width: 200,
                       ),
                     ),
@@ -241,7 +241,7 @@ class AboutUs extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(100),
                     child: Image.asset(
-                      'assets/gallery/doacao/06.png',
+                      'assets/gallery/doacao/imagens/06.png',
                       width: 150,
                     ),
                   ),

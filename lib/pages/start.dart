@@ -248,7 +248,7 @@ class Start extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
-                   'assets/gallery/doacao/03.png',
+                   'assets/gallery/doacao/imagens/03.png',
                   ),
                 ),
               ),
@@ -288,7 +288,7 @@ class Start extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
-                    'assets/gallery/dia_das_criancas/10.png',
+                    'assets/gallery/dia_das_criancas/imagens/10.png',
                   ),
                 ),
               ),
@@ -328,7 +328,7 @@ class Start extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
-                     'assets/gallery/doacao/05.png',
+                     'assets/gallery/doacao/imagens/05.png',
                   ),
                 ),
               ),
@@ -368,7 +368,7 @@ class Start extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
-                  'assets/gallery/acao_de_pascoa/01.png',
+                  'assets/gallery/acao_de_pascoa/imagens/01.png',
                   ),
                 ),
               ),
