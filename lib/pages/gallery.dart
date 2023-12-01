@@ -54,7 +54,9 @@ class Gallery extends StatelessWidget {
                     'assets/gallery/dia_das_criancas/imagens/09.png',
                     'assets/gallery/dia_das_criancas/imagens/10.png',
                   ],
-                  videos: [],
+                  videos: [
+                    'assets/gallery/dia_das_criancas/videos/video_01.mp4',
+                  ],
                 ),
                 Album(
                   image: 'assets/gallery/acao_de_pascoa/imagens/01.png',
@@ -68,15 +70,7 @@ class Gallery extends StatelessWidget {
                   image: 'assets/gallery/doacao/imagens/03.png',
                   text: 'Dia das mães',
                   imagens: const [
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
-                    'assets/gallery/doacao/imagens/03.png',
+                    'assets/gallery/dia_das_maes/imagens/01.png',
                   ],
                   videos: [],
                 ),
@@ -86,7 +80,13 @@ class Gallery extends StatelessWidget {
                   imagens: const [
                     'assets/gallery/natal/imagens/01.png',
                   ],
-                  videos: [],
+                  videos: const [
+                    'assets/gallery/natal/videos/01.mp4',
+                    'assets/gallery/natal/videos/02.mp4',
+                    'assets/gallery/natal/videos/03.mp4',
+                    'assets/gallery/natal/videos/04.mp4',
+                    'assets/gallery/natal/videos/05.mp4',
+                  ],
                 ),
                 Album(
                   image: 'assets/gallery/dia_das_criancas/imagens/10.png',
@@ -98,7 +98,9 @@ class Gallery extends StatelessWidget {
                     'assets/gallery/dia_das_criancas/imagens/10.png',
                     'assets/gallery/dia_das_criancas/imagens/10.png',
                   ],
-                  videos: [],
+                  videos: [
+                    'assets/gallery/dia_das_criancas/videos/video_01.mp4',
+                  ],
                 ),
                 Album(
                   image: 'assets/gallery/doacao/imagens/13.jpg',
@@ -121,8 +123,14 @@ class Gallery extends StatelessWidget {
                     'assets/gallery/doacao/imagens/15.jpg',
                     'assets/gallery/doacao/imagens/16.jpg',
                     'assets/gallery/doacao/imagens/17.png',
+                    'assets/gallery/doacao/imagens/18.png',
                   ],
-                  videos: [],
+                  videos: const [
+                    'assets/gallery/doacao/videos/video_01.mp4',
+                    'assets/gallery/doacao/videos/video_02.mp4',
+                    'assets/gallery/doacao/videos/video_03.mp4',
+                    'assets/gallery/doacao/videos/video_04.mp4',
+                  ],
                 ),
               ],
             ),
