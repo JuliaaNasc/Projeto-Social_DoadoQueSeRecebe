@@ -79,6 +79,8 @@ class Gallery extends StatelessWidget {
                   text: 'Natal',
                   imagens: const [
                     'assets/gallery/natal/imagens/01.png',
+                    'assets/gallery/natal/imagens/02.png',
+                    'assets/gallery/natal/imagens/03.png',
                   ],
                   videos: const [
                     'assets/gallery/natal/videos/01.mp4',

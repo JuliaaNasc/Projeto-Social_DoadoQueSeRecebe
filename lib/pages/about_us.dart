@@ -44,7 +44,7 @@ class AboutUs extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: Text(
-                'A instituição Doando Que Se Recebe, iniciou sua jornada em 08 de Março de 2008. Com a liderança da Cristiane Silva, mais conhecida como "Cris". Com o intuito de ajudar o próximo com esperança de um mundo melhor.',
+                'A instituição Doando Que Se Recebe, iniciou sua jornada em 08 de Março de 2008. Com a liderança da Cristiane Silva, mais conhecida como "Cris". Com o intuito de ajudar o próximo com esperança de um mundo melhor. Nossa missão é transformar ideias em ações, impactando positivamente vidas e comunidades. Vislumbramos um futuro onde a educação, inovação e colaboração se fundem para criar oportunidades sem fronteiras. Nosso trabalho é guiado pela integridade, inovação e responsabilidade.',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 18,
@@ -138,12 +138,23 @@ class AboutUs extends StatelessWidget {
                           ),
                         ],
                       ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        child: Image.asset(
-                          'assets/gallery/doacao/imagens/04.png',
-                          width: 200,
+                      child: GestureDetector(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset(
+                            'assets/gallery/doacao/imagens/08.jpg',
+                            width: 200,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (c) {
+                              return PhotosGallery(
+                                imagem: 'assets/gallery/doacao/imagens/08.jpg',
+                              );
+                            }),
+                          );
+                        },
                       ),
                     ),
                   ),
@@ -175,12 +186,23 @@ class AboutUs extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(7),
-                      child: Image.asset(
-                        'assets/gallery/doacao/imagens/04.png',
-                        width: 200,
+                    child: GestureDetector(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(7),
+                        child: Image.asset(
+                          'assets/gallery/doacao/imagens/08.jpg',
+                          width: 200,
+                        ),
                       ),
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (c) {
+                              return PhotosGallery(
+                                imagem: 'assets/gallery/doacao/imagens/08.jpg',
+                              );
+                            }),
+                          );
+                        },
                     ),
                   ),
                 ),
