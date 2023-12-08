@@ -134,6 +134,14 @@ class Gallery extends StatelessWidget {
                     'assets/gallery/doacao/videos/video_04.mp4',
                   ],
                 ),
+                 Album(
+                  image: 'assets/gallery/poster/imagens/01.jpg',
+                  text: 'Poster',
+                  imagens: const [
+                    'assets/gallery/poster/imagens/01.jpg',
+                  ],
+                  videos: [],
+                  ),
               ],
             ),
             SizedBox(height: 30),
