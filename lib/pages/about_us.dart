@@ -190,19 +190,19 @@ class AboutUs extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(7),
                         child: Image.asset(
-                          'assets/gallery/doacao/imagens/08.jpg',
+                          'assets/gallery/dia_das_criancas/imagens/11.jpeg',
                           width: 200,
                         ),
                       ),
-                        onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(builder: (c) {
-                              return PhotosGallery(
-                                imagem: 'assets/gallery/doacao/imagens/08.jpg',
-                              );
-                            }),
-                          );
-                        },
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (c) {
+                            return PhotosGallery(
+                              imagem: 'assets/gallery/dia_das_criancas/imagens/11.jpeg',
+                            );
+                          }),
+                        );
+                      },
                     ),
                   ),
                 ),
@@ -263,7 +263,7 @@ class AboutUs extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(100),
                     child: Image.asset(
-                      'assets/gallery/doacao/imagens/06.png',
+                      'assets/gallery/dia_das_maes/imagens/foto_da_cris.jpeg',
                       width: 150,
                     ),
                   ),

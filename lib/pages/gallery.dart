@@ -53,6 +53,7 @@ class Gallery extends StatelessWidget {
                     'assets/gallery/dia_das_criancas/imagens/08.jpg',
                     'assets/gallery/dia_das_criancas/imagens/09.png',
                     'assets/gallery/dia_das_criancas/imagens/10.png',
+                    'assets/gallery/dia_das_criancas/imagens/11.jpeg',
                   ],
                   videos: [
                     'assets/gallery/dia_das_criancas/videos/video_01.mp4',
@@ -95,10 +96,6 @@ class Gallery extends StatelessWidget {
                   text: 'Cursos da instituição',
                   imagens: const [
                     'assets/gallery/dia_das_criancas/imagens/10.png',
-                    'assets/gallery/dia_das_criancas/imagens/10.png',
-                    'assets/gallery/dia_das_criancas/imagens/10.png',
-                    'assets/gallery/dia_das_criancas/imagens/10.png',
-                    'assets/gallery/dia_das_criancas/imagens/10.png',
                   ],
                   videos: [
                     'assets/gallery/dia_das_criancas/videos/video_01.mp4',
@@ -134,14 +131,22 @@ class Gallery extends StatelessWidget {
                     'assets/gallery/doacao/videos/video_04.mp4',
                   ],
                 ),
-                 Album(
+                Album(
                   image: 'assets/gallery/poster/imagens/01.jpg',
                   text: 'Poster',
                   imagens: const [
                     'assets/gallery/poster/imagens/01.jpg',
+                    'assets/gallery/poster/imagens/02.jpeg',
+                    'assets/gallery/poster/imagens/03.jpeg',
+                    'assets/gallery/poster/imagens/04.jpeg',
+                    'assets/gallery/poster/imagens/05.jpeg',
+                    'assets/gallery/poster/imagens/06.jpeg',
+                    'assets/gallery/poster/imagens/07.jpeg',
+                    'assets/gallery/poster/imagens/08.jpeg',
+                    'assets/gallery/poster/imagens/09.jpeg',
                   ],
                   videos: [],
-                  ),
+                ),
               ],
             ),
             SizedBox(height: 30),

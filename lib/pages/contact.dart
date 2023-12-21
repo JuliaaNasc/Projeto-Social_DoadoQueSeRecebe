@@ -108,8 +108,7 @@ class Contact extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: Text('. . .'),
-                  ),
+                    subtitle: Text('https://instituto-doando-que-se-recebe.netlify.app/'),                  ),
                   SizedBox(height: 10),
                   ListTile(
                     onTap: () {
