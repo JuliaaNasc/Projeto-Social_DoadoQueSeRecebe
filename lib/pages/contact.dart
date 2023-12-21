@@ -90,7 +90,7 @@ class Contact extends StatelessWidget {
                     onTap: () {
                       launchUrl(
                         Uri.parse(
-                          ' ',
+                          'https://instituto-doando-que-se-recebe.netlify.app/ ',
                         ),
                         mode: LaunchMode.externalApplication,
                       );
@@ -108,7 +108,8 @@ class Contact extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: Text('https://instituto-doando-que-se-recebe.netlify.app/'),                  ),
+                    subtitle: Text('https://instituto-doando-que-se-recebe.netlify.app/'),
+                  ),
                   SizedBox(height: 10),
                   ListTile(
                     onTap: () {
